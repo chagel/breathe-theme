@@ -14,6 +14,8 @@
   {{! feed, styles, etc. }}
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{@blog.url}}/rss/">
   <link rel="stylesheet" href="{{asset "css/main.css"}}">
+  <link href="{{asset "prism/prism.css"}}" rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="{{asset "prism/prism.js"}}"></script>
 
   {{! ghost stuff - don't remove this! }}
   {{ghost_head}}
@@ -40,10 +42,7 @@
   <footer class="main-footer">
     <nav class="main-menu">{{navigation}}</nav>
     <p><a href="{{@blog.url}}/rss/">Subscribe to RSS</a> updates.</p>
-    <p>© {{date format="YYYY"}} {{@blog.title}}. All rights reserved.<br>
-      Powered with <a href="https://www.ghost.org">Ghost</a> and the
-      <a href="https://www.github.com/belen-albeza/breathe-theme">Breathe</a> theme.
-    </p>
+    <p>© {{date format="YYYY"}} {{@blog.title}}. All rights reserved.</p>
   </footer>
   {{! ghost stuff - don't remove this! }}
   {{ghost_foot}}

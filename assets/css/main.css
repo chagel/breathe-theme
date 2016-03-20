@@ -4,7 +4,6 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(http://fonts.googleapis.com/css?family=Cardo:400,700,400italic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -358,34 +357,37 @@ th {
   padding: 0;
 }
 body {
-  background: #ffffff;
-  color: #333333;
-  font-family: Cardo, Gerogia, serif;
-  font-size: 1.3em;
+  background: #fff;
+  color: #333;
+  font-family: 'Gill Sans', Arial, Georgia, serif;
+  font-size: 1.2em;
   line-height: 1.6em;
   -webkit-font-smoothing: antialiased;
 }
 a {
-  color: #000000;
+  color: #000;
   text-decoration: none;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ccc;
 }
 a:hover {
-  color: #000000;
+  color: #000;
   background: #fdf9ec;
 }
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
   width: 25%;
   margin: 2em auto;
 }
 blockquote {
-  border-left: 2px solid #cccccc;
+  border-left: 2px solid #ccc;
   padding: 0.1em 1em;
   margin-left: 0.75em;
+}
+pre {
+  font-size: 14px;
 }
 .main-wrapper {
   max-width: 42em;
@@ -475,6 +477,7 @@ blockquote {
 .post img {
   display: block;
   margin: 0 auto;
+  max-width: 42em;
 }
 .post-content hr {
   width: 10%;
