@@ -15,7 +15,16 @@
     "theme",
     "blog"
   ],
-  "author": "Belén \"Benko\" Albeza",
+  "config": {
+    "posts_per_page": 1
+  },
+  "engines": {
+    "ghost": "^1.0.0"
+  },
+  "author": {
+    "name": "Belén \"Benko\" Albeza",
+    "email": "author@email.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/belen-albeza/breathe-theme/issues"
