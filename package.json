@@ -1,6 +1,6 @@
 {
   "name": "chagel",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Minimalist theme for Ghost",
   "main": "index.js",
   "scripts": {
@@ -13,13 +13,14 @@
   "keywords": [
     "ghost",
     "theme",
-    "blog"
+    "blog",
+    "ghost-theme"
   ],
   "config": {
     "posts_per_page": 1
   },
   "engines": {
-    "ghost": "^1.0.0"
+    "ghost": "^2.0.0"
   },
   "author": {
     "name": "Belén \"Benko\" Albeza",
