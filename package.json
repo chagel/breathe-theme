@@ -1,6 +1,6 @@
 {
-  "name": "chagel",
-  "version": "2.0.0",
+  "name": "breath",
+  "version": "3.0.0",
   "description": "Minimalist theme for Ghost",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/belen-albeza/breathe-theme.git"
+    "url": "git+https://github.com/chagel/breathe-theme.git"
   },
   "keywords": [
     "ghost",
@@ -20,17 +20,18 @@
     "posts_per_page": 1
   },
   "engines": {
-    "ghost": "^2.0.0"
+    "ghost": ">=3.0.0",
+    "ghost-api": "v3"
   },
   "author": {
-    "name": "Belén \"Benko\" Albeza",
+    "name": "Belén \"Benko\" Albeza\" MGC",
     "email": "author@email.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/belen-albeza/breathe-theme/issues"
+    "url": "https://github.com/chagel/breathe-theme/issues"
   },
-  "homepage": "https://github.com/belen-albeza/breathe-theme#readme",
+  "homepage": "https://github.com/chagel/breathe-theme#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.3",

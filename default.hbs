@@ -1,51 +1,48 @@
 <!doctype html>
-<html>
-<head>
-  {{! document settings }}
-  <meta charset="utf-8">
-  {{! mobile friendly }}
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="{{@site.lang}}">
+  <head>
 
-  {{! page meta }}
-  <title>{{meta_title}}</title>
+    {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    {{! mobile friendly }}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  {{! feed, styles, etc. }}
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{@blog.url}}/rss/">
-  <link rel="stylesheet" href="{{asset "css/main.css"}}">
-  <link href="{{asset "prism/prism.css"}}" rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="{{asset "prism/prism.js"}}"></script>
+    {{! page meta }}
+    <title>{{meta_title}}</title>
 
-  {{! ghost stuff - don't remove this! }}
-  {{ghost_head}}
-</head>
+    {{! feed, styles, etc. }}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{@site.url}}/rss/" />
+    <link rel="stylesheet" href="{{asset "css/main.css"}}" />
+    <link href="{{asset "prism/prism.css"}}" rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="{{asset "prism/prism.js"}}"></script>
 
-<body class="{{body_class}}">
-<div class="main-wrapper">
-  <header class="main-header">
-    <div class="title-wrapper">
-      <h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-      <p>{{@blog.description}}</p>
-    </div><!-- title wrapper -->
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
+    {{ghost_head}}
+  </head>
+  <body class="{{body_class}}">
+    <div class="main-wrapper">
+      <header class="main-header">
+        <div class="title-wrapper">
+          <h1><a href="{{@site.url}}">{{@site.title}}</a></h1>
+          <p>{{@site.description}}</p>
+        </div>
 
-    <nav class="main-menu">
-      {{navigation}}
-    </nav>
-  </header>
+        <nav class="main-menu">
+          {{navigation}}
+        </nav>
+      </header>
 
-  <main>
-  {{! everything else gets inserted here }}
-  {{{body}}}
-  </main>
+      <main>
+        {{{body}}}
+      </main>
 
-  <footer class="main-footer">
-    <nav class="main-menu">{{navigation}}</nav>
-    <p><a href="{{@blog.url}}/rss/">Subscribe to RSS</a> updates.</p>
-    <p>© {{date format="YYYY"}} {{@blog.title}}. All rights reserved.</p>
-  </footer>
-  {{! ghost stuff - don't remove this! }}
-  {{ghost_foot}}
-</div>{{! main wrapper }}
-<script id="dsq-count-scr" src="//gchen.disqus.com/count.js" async></script>
-</body>
+      <footer class="main-footer">
+        <nav class="main-menu">{{navigation}}</nav>
+        <p><a href="{{@site.url}}/rss/">Subscribe to RSS</a></p>
+        <p>© {{date format="YYYY"}} {{@site.title}}. All rights reserved.</p>
+      </footer>
+      {{ghost_foot}}
+    </div>{{! main wrapper }}
+  </body>
 </html>
